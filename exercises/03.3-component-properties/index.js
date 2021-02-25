@@ -20,10 +20,10 @@ const BootstrapCard = props => {
 BootstrapCard.propTypes = {
 	title: PropType.string,
 	// 2) add here the new properties into the proptypes object
-	description: PropType.string,
-	imageUrl: PropType.string,
-	buttonrUrl: PropType.string,
-	buttonLabel: PropType.string
+	description: PropTypes.string,
+	imageUrl: PropTypes.string,
+	buttonrUrl: PropTypes.string,
+	buttonLabel: PropTypes.string
 };
 
 // 3) Use ReactDOM to add the component into then DOM element #myDiv
