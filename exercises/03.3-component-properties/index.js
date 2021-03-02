@@ -10,20 +10,20 @@ const BootstrapCard = props => {
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
 				<p className="card-text">{props.description}</p>
-				<a href={props.buttonrUrl} className="btn btn-primary">
+				<a href={props.buttonUrl} className="btn btn-primary">
 					{props.buttonLabel}
 				</a>
 			</div>
 		</div>
 	);
 };
-BootstrapCard.propTypes = {
+BootstrapCard.PropType = {
 	title: PropType.string,
 	// 2) add here the new properties into the proptypes object
-	description: PropTypes.string,
-	imageUrl: PropTypes.string,
-	buttonrUrl: PropTypes.string,
-	buttonLabel: PropTypes.string
+	description: PropType.string,
+	imageUrl: PropType.string,
+	buttonrUrl: PropType.string,
+	buttonLabel: PropType.string
 };
 
 // 3) Use ReactDOM to add the component into then DOM element #myDiv
@@ -32,7 +32,7 @@ ReactDOM.render(
 		title="Bob Dylan"
 		imageUrl="https://ucarecdn.com/f8cf81eb-3bab-4bba-9431-668884eab174/-/resize/300x/"
 		buttonLabel="Go to wikipedia"
-		buttonrUrl={"https://en.wikipedia.org/wiki/Bob_Dylan"}
+		buttonUrl={"https://en.wikipedia.org/wiki/Bob_Dylan"}
 		description="Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter."
 	/>,
 	document.querySelector("#myDiv")
